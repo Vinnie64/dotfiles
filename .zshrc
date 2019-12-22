@@ -95,6 +95,8 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+alias tmuxconfig="vim ~./.tmux.conf"
+alias vimconfig="vim ~/.vimrc"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias python=python3.8
