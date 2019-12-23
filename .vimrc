@@ -56,6 +56,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'kana/vim-textobj-entire'
 Plugin 'kana/vim-textobj-user'
+Plugin 'kana/vim-textobj-line'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
