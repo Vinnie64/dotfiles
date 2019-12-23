@@ -53,6 +53,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'vim-scripts/ReplaceWithRegister'
 Plugin 'christoomey/vim-system-copy'
 Plugin 'tpope/vim-repeat'
+Plugin 'michaeljsmith/vim-indent-object'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
