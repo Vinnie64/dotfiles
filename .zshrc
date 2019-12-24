@@ -68,7 +68,7 @@ ZSH_THEME="jispwoso"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras copyfile encode64 extract web-search wd)
+plugins=(git z git-extras copyfile encode64 extract web-search wd)
 
 source $ZSH/oh-my-zsh.sh
 
