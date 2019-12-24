@@ -9,5 +9,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 sudo rm -f .zshrc .vimrc .tmux.conf
 python3.8 $HOME/dotfiles/export.py
 chsh -s /bin/zsh
+vim +PluginInstall +qall
 echo "Restart your terminal for all changes to take effect!"
 
