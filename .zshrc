@@ -106,3 +106,5 @@ alias venv="python -m venv"
 # VI-mode
 bindkey -v
 KEYTIMEOUT=1
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^e' edit-command-line
