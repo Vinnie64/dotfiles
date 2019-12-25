@@ -94,12 +94,15 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-alias tmuxconfig="vim ~./.tmux.conf"
-alias vimconfig="vim ~/.vimrc"
-alias zshconfig="vim ~/.zshrc"
+# Aliases
+alias tmuxconf="vim ~./.tmux.conf"
+alias vimrc="vim ~/.vimrc"
+alias zshrc="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias python=python3.8
 alias pip="python -m pip"
 alias venv="python -m venv"
 
+# VI-mode
+bindkey -v
+KEYTIMEOUT=1
