@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt update
 sudo apt full-upgrade -y
-sudo apt install git python3.8 tmux vim zsh -y
+sudo apt install git python3.8 tmux vim zsh neomutt offlineimap python3-pip -y
 export ZSH=$HOME/.oh-my-zsh
 git clone https://github.com/fittiboy/dotfiles ~/dotfiles
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
