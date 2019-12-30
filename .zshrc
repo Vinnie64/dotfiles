@@ -111,3 +111,6 @@ bindkey '^e' edit-command-line
 
 # Add scripts folder to $PATH
 export PATH=$PATH:$HOME/scripts
+
+# Set $MAIL
+export MAIL=$HOME/.mail
