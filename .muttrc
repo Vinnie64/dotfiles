@@ -14,7 +14,7 @@ set ssl_starttls
 
 set spoolfile = "~/.mail/INBOX"
 
-mailboxes "~/.mail/INBOX" "~/.mail/Archive" "~/.mail/Sent"
+mailboxes "~/.mail/INBOX" "~/.mail/Archive" "~/.mail/Sent" "~/.mail/Trash"
 
 # Sidebar
 
