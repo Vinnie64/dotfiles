@@ -1,0 +1,31 @@
+# "+" substitutes for `folder`
+set mbox_type=Maildir
+set folder=~/.mail/
+set record=+Sent
+set postponed=+Drafts
+set trash=+Trash
+set mail_check=2 # seconds
+
+# smtp
+source ~/docs/keys/mail
+set smtp_url=smtp://$my_user:$my_pass@127.0.0.1:1025
+set ssl_force_tls
+set ssl_starttls
+
+set spoolfile = "~/.mail/INBOX"
+
+mailboxes "~/.mail/INBOX" "~/.mail/Archive" "~/.mail/Sent"
+
+# Sidebar
+
+set sidebar_visible
+set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S"
+set mail_check_stats
+
+bind index,pager \CP sidebar-prev
+# Ctrl-Shift-P – Previous Mailbox
+bind index,pager \CN sidebar-next
+# Ctrl-Shift-N – Next Mailbox
+bind index,pager \CO sidebar-open
+# Ctrl-Shift-O – Open Highlighted Mailbox
+
