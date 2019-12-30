@@ -29,3 +29,5 @@ bind index,pager \CN sidebar-next
 bind index,pager \CO sidebar-open
 # Ctrl-Shift-O – Open Highlighted Mailbox
 
+# From address
+set from="Fitti <fitti@fitti.io>"
