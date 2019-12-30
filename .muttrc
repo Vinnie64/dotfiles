@@ -19,7 +19,7 @@ mailboxes "~/.mail/INBOX" "~/.mail/Archive" "~/.mail/Sent" "~/.mail/Trash"
 # Sidebar
 
 set sidebar_visible
-set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S"
+set sidebar_format = "%B%* %?N?%N/?%S"
 set mail_check_stats
 
 bind index,pager \CP sidebar-prev
