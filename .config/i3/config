@@ -176,8 +176,8 @@ bar {
 # Bind audio keys
 
 bindsym XF86AudioMute exec amixer set Master toggle
-bindsym XF86AudioLower exec amixer set Master 5%-
-bindsym XF86AudioRaise exec amixer set Master 5%+
+bindsym XF86AudioLowerVolume exec amixer set Master 5%-
+bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
 
 # Bind hotkeys
 
