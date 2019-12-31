@@ -21,6 +21,7 @@ set shiftwidth=4
 set autoindent
 set smartindent
 set showcmd
+set undofile
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
