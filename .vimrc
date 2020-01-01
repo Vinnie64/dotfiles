@@ -83,6 +83,6 @@ function! CompileGroffMs()
     write
     filetype detect
     let filename = expand("%:r") 
-    execute "! groff -ms " . filename . ".ms -T pdf > " . filename . ".pdf"
+    execute "! groff -e -ms " . filename . ".ms -T pdf > " . filename . ".pdf"
 endfunction
 
