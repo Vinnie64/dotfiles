@@ -82,8 +82,9 @@ autocmd BufWriteCmd *.ms :call CompileGroffMs()
 function! CompileGroffMs()
     if &modified
         write
+        filetype detect
         let filename = expand("%:r") 
-        execute "! groff -ms " . filename . ".ms -T pdf >" . filename . ".pdf"
+        execute "! groff -ms " . filename . ".ms -T pdf > " . filename . ".pdf"
     endif
 endfunction
 
