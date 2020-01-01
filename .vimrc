@@ -77,8 +77,13 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "
 "
-"
-" ToDo: Automatic compilation of groff files (start with .ms files)
-" When saving a FILENAME.ms file, the command `groff -ms FILENAME.ms -T pdf >
-" FILENAME.pdf` should run automatically
-"
+" Automatically compile groff ms files when saving
+autocmd BufWriteCmd *.ms :call CompileGroffMs()
+function! CompileGroffMs()
+    if &modified
+        write
+        let filename = expand("%:r") 
+        execute "! groff -ms " . filename . ".ms -T pdf >" . filename . ".pdf"
+    endif
+endfunction
+
