@@ -36,6 +36,9 @@ floating_modifier $mod
 # lock the session
 bindsym $mod+Escape exec dm-tool lock
 
+# shutdown system
+bindsym $mod+Shift+Escape exec shutdown now
+
 # start a terminal
 bindsym $mod+Return exec alacritty
 
