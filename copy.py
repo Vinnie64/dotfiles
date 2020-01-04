@@ -10,5 +10,4 @@ with open(f'{home}/dotfiles/files_to_copy.json') as filesfile:
 for file in files:
     namelist = file.split("/")
     filename = namelist[-1]
-    print(filename)
     shutil.copy(f"{file}", f"{home}/dotfiles/{filename}")
