@@ -189,7 +189,7 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 3%+
 # Bind hotkeys
 
 bindsym $mod+Shift+f exec firefox
-bindsym $mod+Shift+m exec alacritty --command neomutt
+bindsym $mod+Shift+m exec --no-startup-id alacritty --command neomutt
 
 # Mail
 
