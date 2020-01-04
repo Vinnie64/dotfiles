@@ -204,3 +204,8 @@ exec ~/.fehbg &
 
 assign [class="discord"] $ws10
 assign [class="Steam"] $ws9
+
+# Autostart
+
+exec --no-session-id steam
+exec --no-session-id discord
