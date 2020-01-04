@@ -197,7 +197,7 @@ bar {
                 inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
                 urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
         }
-        font pango:Inconsolata 14
+        font pango:Inconsolata 16
         status_command ~/.config/bumblebee-status/bumblebee-status -m cpu memory disk datetime battery -p disk.path=/home datetime.format="%a, %b %d %Y | %H:%M:%S" interval=1 
 }
 
