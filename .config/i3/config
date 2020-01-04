@@ -207,5 +207,5 @@ assign [class="Steam"] $ws9
 
 # Autostart
 
-exec --no-session-id steam
-exec --no-session-id discord
+exec --no-startup-id steam
+exec --no-startup-id discord
