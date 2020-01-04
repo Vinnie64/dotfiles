@@ -202,5 +202,5 @@ exec ~/.fehbg &
 
 # Assign windows to workspaces
 
-assign [class="discord"] 10
-assign [class="Steam"] 9
+assign [class="discord"] $ws10
+assign [class="Steam"] $ws9
