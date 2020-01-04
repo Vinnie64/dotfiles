@@ -173,9 +173,30 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Set colors
+set $bg-color            #2f343f
+set $text-color          #f3f4f5
+set $inactive-bg-color   #2f343f
+set $inactive-text-color #676767
+set $urgent-bg-color     #8B8B8B
+
+hide_edge_borders smart
+#                        border              background          text                  indicator
+client.focused           $bg-color           $bg-color           $text-color           #00ff00
+client.unfocused         $inactive-bg-color  $inactive-bg-color  $inactive-text-color  #00ff00
+client.focused_inactive  $inactive-bg-color  $inactive-bg-color  $inactive-text-color  #00ff00
+client.urgent            $urgent-bg-color    $urgent-bg-color    $text-color           #00ff00
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+        colors {
+                background $bg-color
+                separator #757575
+                focused_workspace  $bg-color          $bg-color          $text-color
+                inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+                urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+        }
         font pango:Inconsolata 14
         status_command ~/.config/bumblebee-status/bumblebee-status -m cpu memory disk datetime battery -p disk.path=/home datetime.format="%a, %b %d %Y | %H:%M:%S" interval=1 
 }
@@ -210,16 +231,3 @@ assign [class="Steam"] $ws9
 exec --no-startup-id steam
 exec --no-startup-id discord
 
-# Set colors
-set $bg-color            #2f343f
-set $text-color          #f3f4f5
-set $inactive-bg-color   #2f343f
-set $inactive-text-color #676767
-set $urgent-bg-color     #8B8B8B
-
-hide_edge_borders smart
-#                        border              background          text                  indicator
-client.focused           $bg-color           $bg-color           $text-color           #00ff00
-client.unfocused         $inactive-bg-color  $inactive-bg-color  $inactive-text-color  #00ff00
-client.focused_inactive  $inactive-bg-color  $inactive-bg-color  $inactive-text-color  #00ff00
-client.urgent            $urgent-bg-color    $urgent-bg-color    $text-color           #00ff00
