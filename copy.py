@@ -8,4 +8,7 @@ with open(f'{home}/dotfiles/files_to_copy.json') as filesfile:
     files = json.load(filesfile)
 
 for file in files:
-    shutil.copy(f"{home}/{file}", f"{home}/dotfiles/{file}")
+    namelist = file.split("/")
+    filename = namelist[-1]
+    print(filename)
+    shutil.copy(f"{file}", f"{home}/dotfiles/{filename}")

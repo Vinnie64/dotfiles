@@ -1,1 +1,13 @@
-[".tmux.conf", ".zshrc", ".vimrc", ".config/i3/config", ".muttrc", ".offlineimaprc", ".notmuch-config", ".config/alacritty/alacritty.yml"]
+[
+    "/home/fitti/.tmux.conf",
+    "/home/fitti/.zshrc",
+    "/home/fitti/.vimrc",
+    "/home/fitti/.config/i3/config",
+    "/home/fitti/.muttrc",
+    "/home/fitti/.offlineimaprc",
+    "/home/fitti/.notmuch-config",
+    "/home/fitti/.config/alacritty/alacritty.yml",
+    "/etc/lightdm/lightdm-mini-greeter.conf",
+    "/etc/lightdm/lightdm.conf",
+    "/etc/lightdm/background"
+]
