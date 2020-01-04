@@ -230,4 +230,5 @@ assign [class="Steam"] $ws9
 
 exec --no-startup-id steam
 exec --no-startup-id discord
+exec --no-startup-id compton
 
