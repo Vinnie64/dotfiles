@@ -9,5 +9,6 @@
     "/home/fitti/.config/alacritty/alacritty.yml",
     "/etc/lightdm/lightdm-mini-greeter.conf",
     "/etc/lightdm/lightdm.conf",
-    "/etc/lightdm/background"
+    "/etc/lightdm/background",
+    "/etc/default/grub"
 ]
