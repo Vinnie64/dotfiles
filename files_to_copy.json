@@ -8,8 +8,6 @@
     "/home/fitti/.notmuch-config",
     "/home/fitti/.config/alacritty/alacritty.yml",
     "/etc/lightdm/lightdm-mini-greeter.conf",
-    "/etc/lightdm/lightdm.conf",
-    "/etc/lightdm/display_setup.sh",
     "/etc/lightdm/background",
     "/etc/default/grub",
     "/etc/X11/xorg.conf.d/00-keyboard.conf"
