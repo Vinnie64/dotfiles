@@ -2,7 +2,7 @@ from pathlib import Path
 import shutil
 import json
 
-home = str(Path.home())
+home = '/home/fitti'
 
 with open(f'{home}/dotfiles/files_to_copy.json') as filesfile:
     files = json.load(filesfile)
