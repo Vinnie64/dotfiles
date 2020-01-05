@@ -11,5 +11,6 @@
     "/etc/lightdm/lightdm.conf",
     "/etc/lightdm/display_setup.sh",
     "/etc/lightdm/background",
-    "/etc/default/grub"
+    "/etc/default/grub",
+    "/etc/X11/xorg.conf.d/00-keyboard.conf"
 ]
