@@ -40,7 +40,7 @@ bindsym $mod+Escape exec --no-startup-id dm-tool lock
 bindsym $mod+Shift+Escape exec --no-startup-id shutdown now
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id alacritty
+bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -210,7 +210,7 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 3%+
 # Bind hotkeys
 
 bindsym $mod+Shift+Return exec firefox
-bindsym $mod+Shift+m exec --no-startup-id alacritty --command neomutt
+bindsym $mod+Shift+m exec --no-startup-id i3-sensible-terminal --command neomutt
 
 # Mail
 
