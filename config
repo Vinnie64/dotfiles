@@ -219,7 +219,7 @@ exec --no-startup-id tmux new-session -d -s offlineimap 'offlineimap'
 
 # Background
 
-exec --no-startup-id ~/.fehbg &
+exec --no-startup-id feh --bg-fill /etc/lightdm/background
 
 # Assign windows to workspaces
 
