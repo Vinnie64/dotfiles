@@ -1,3 +1,4 @@
+#!/bin/python
 from pathlib import Path
 import shutil
 import json
