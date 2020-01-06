@@ -99,6 +99,8 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 alias python=python3.8
 alias pip="python -m pip"
 alias venv="python -m venv"
+alias dotfl=". dotfiles_script"
+alias scpt=". scripts_script"
 
 # VI-mode
 bindkey -v
