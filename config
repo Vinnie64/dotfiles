@@ -246,3 +246,5 @@ for_window [class="Alacritty"] floating enable
 for_window [class="Thunar"] floating enable
 for_window [class="feh"] floating enable
 for_window [title="Friends List"] floating enable
+for_window [class="Nvidia-settings"] floating enable
+for_window [class="Lxappearance"] floating enable
