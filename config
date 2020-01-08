@@ -228,7 +228,7 @@ bindsym $mod+p exec --no-startup-id thunar
 # General keybinds
 
 bindsym --whole-window $mod+button3 move scratchpad
-bindsym $mod+c scratchpad show
+bindsym $mod+c [con_mark="scratchmark"] scratchpad show
 bindsym $mod+Control+c move position center
 
 # Mail
