@@ -238,13 +238,14 @@ exec --no-startup-id feh --bg-fill /etc/lightdm/background
 assign [class="discord"] $ws10
 assign [class="Steam"] $ws9
 assign [title="Steam"] $ws9
+assign [title="Scratchpad terminal"] $ws9
 
 # Autostart
 
 exec --no-startup-id steam
 exec --no-startup-id discord
 exec --no-startup-id compton
-exec --no-startup-id alacritty --command ~/scripts/move_to_scratchpad
+exec --no-startup-id alacritty --title "Scratchpad terminal" --command ~/scripts/move_to_scratchpad
 
 # for_window
 
