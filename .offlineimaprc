@@ -29,7 +29,7 @@ type = IMAP
 remoteport = 1143
 remotehost = 127.0.0.1
 remoteuser = f1tti@pm.me
-remotepass = 5JJJIIuUmFuLQGYQvtz57A
+remotepassfile = ~/.config/.mailpass
 keepalive = 60
 holdconnectionopen = yes
 
