@@ -228,8 +228,8 @@ bindsym $mod+p exec --no-startup-id thunar
 # General keybinds
 
 #bindsym --whole-window $mod+button3 move scratchpad
-bindsym $mod+c [con_mark="scratchmark"] scratchpad show
-bindsym $mod+u [class="discord"] scratchpad show
+bindsym $mod+c [con_mark="scratchmark"] scratchpad show, resize set width 60 ppt height 60 ppt, move position center
+bindsym $mod+u [class="discord"] scratchpad show, resize set width 1500 px height 850 px, move position center
 bindsym $mod+Control+c move position center
 
 # Mail
@@ -261,9 +261,7 @@ for_window [class="Alacritty"] floating enable
 for_window [class="Alacritty"] resize set width 60 ppt height 60 ppt
 for_window [class="Alacritty"] border none
 for_window [class="Alacritty"] move position center
-for_window [class="discord"] resize set width 52 ppt height 55 ppt
-for_window [class="discord"] move position center
-for_window [class="discord"] move scratchpad
+for_window [class="discord"] border none, move scratchpad
 for_window [class="Thunar"] floating enable
 for_window [class="Thunar"] move position center
 for_window [class="feh"] floating enable
