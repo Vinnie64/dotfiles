@@ -108,15 +108,21 @@ set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
 set $ws4 "4"
-set $ws5 "5"
+set $ws5 "5: "
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
-set $ws9 "9: "
-set $ws10 "10: "
+set $ws9 "9"
+set $ws10 "10: "
 workspace $ws1 output DP-4
-workspace $ws2 output DVI-D-0
-workspace $ws9 output DP-4
+workspace $ws2 output DP-4
+workspace $ws3 output DP-4
+workspace $ws4 output DP-4
+workspace $ws5 output DP-4
+workspace $ws6 output DVI-D-0
+workspace $ws7 output DVI-D-0
+workspace $ws8 output DVI-D-0
+workspace $ws9 output DVI-D-0
 workspace $ws10 output DVI-D-0
 
 # switch to workspace
@@ -235,17 +241,17 @@ exec --no-startup-id feh --bg-fill /etc/lightdm/background
 
 # Assign windows to workspaces
 
-assign [class="discord"] $ws10
-assign [class="Steam"] $ws9
-assign [title="Steam"] $ws9
-assign [title="Alacritty scratch"] $ws9
+assign [class="discord"] $ws5
+assign [title="Alacritty scratch"] $ws5
+assign [class="Steam"] $ws10
+assign [title="Steam"] $ws10
 
 # Autostart
 
 exec --no-startup-id steam
 exec --no-startup-id discord
 exec --no-startup-id compton
-exec_always --no-startup-id alacritty --title "Alacritty scratch" --command ~/scripts/move_to_scratchpad
+exec --no-startup-id alacritty --title "Alacritty scratch" --command ~/scripts/move_to_scratchpad
 
 # for_window
 
