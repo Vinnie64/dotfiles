@@ -244,13 +244,11 @@ assign [title="Steam"] $ws9
 exec --no-startup-id steam
 exec --no-startup-id discord
 exec --no-startup-id compton
-exec --no-startup-id pasystray
 
 # for_window
 
 for_window [class="Alacritty"] floating enable
-for_window [class="Alacritty"] resize set width 60 ppt height 60ppt
-for_window [class="Alacritty"] move position center
+for_window [class="Alacritty"] resize set width 60 ppt height 60 ppt
 for_window [class="Alacritty"] border none
 for_window [class="Thunar"] floating enable
 for_window [class="Thunar"] move position center
