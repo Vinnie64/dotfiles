@@ -250,6 +250,7 @@ exec --no-startup-id pasystray
 for_window [class="Alacritty"] floating enable
 for_window [class="Alacritty"] resize set width 60 ppt height 60ppt
 for_window [class="Alacritty"] move position center
+for_window [class="Alacritty"] border none
 for_window [class="Thunar"] floating enable
 for_window [class="Thunar"] move position center
 for_window [class="feh"] floating enable
