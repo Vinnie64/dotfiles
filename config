@@ -201,7 +201,7 @@ bar {
                 inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
                 urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
         }
-        font pango:Inconsolata 16
+        font pango:DejaVu Sans 16
         status_command ~/.config/bumblebee-status/bumblebee-status -m cpu memory disk datetime pasink $(cat ~/.laptop) -p memory.format="{percent:05.02f}%" disk.path=/home disk.format="{left}" datetime.format="%a, %b %d %Y | %H:%M:%S" interval=1 
 }
 
