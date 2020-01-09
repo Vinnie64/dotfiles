@@ -1,11 +1,12 @@
 #!/bin/python
 from pathlib import Path
+from sys import argv
 import shutil
 import json
 import pwd
 import os
 
-username = pwd.getpwuid(os.getuid()).pw_name
+username = argv[1]
 
 with open(f'/home/{username}/dotfiles/files_to_copy.json') as filesfile:
     files = json.load(filesfile)
