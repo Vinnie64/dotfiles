@@ -1,9 +1,10 @@
 #!/bin/python
 import shutil
 import json
-import getpass
+import pwd
+import os
 
-username = getpass.getuser()
+username = pwd.getpwuid(os.getuid()).pw_name
 
 with open(f'/home/{username}/dotfiles/files_to_copy.json') as filesfile:
     files = json.load(filesfile)
