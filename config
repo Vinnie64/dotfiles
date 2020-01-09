@@ -229,7 +229,9 @@ bindsym $mod+p exec --no-startup-id thunar
 
 #bindsym --whole-window $mod+button3 move scratchpad
 bindsym $mod+c [con_mark="scratchmark"] scratchpad show, resize set width 60 ppt height 60 ppt, move position center
+bindsym --whole-window $mod+Control+Shift+c+button3 mark add "scratchmark", move scratchpad
 bindsym $mod+u [class="discord"] scratchpad show, resize set width 1500 px height 850 px, move position center
+bindsym $mod+Control+Shift+u [class="discord"] move scratchpad
 bindsym $mod+Control+c move position center
 
 # Mail
