@@ -58,6 +58,7 @@ Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'kana/vim-textobj-entire'
 Plugin 'kana/vim-textobj-user'
 Plugin 'kana/vim-textobj-line'
+Plugin 'vim-scripts/mom.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -81,7 +82,7 @@ filetype plugin indent on    " required
 autocmd BufWriteCmd *.mom :call CompileGroffMom()
 function! CompileGroffMom()
     write
-    filetype detect
+    set ft=mom
     let filename = expand("%:r") 
     execute "! pdfmom " . filename . ".mom > " . filename . ".pdf"
 endfunction
