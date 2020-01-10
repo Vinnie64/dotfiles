@@ -83,6 +83,6 @@ function! CompileGroffMom()
     write
     filetype detect
     let filename = expand("%:r") 
-    execute "! pdfmom -e " . filename . ".mom -Tpdf > " . filename . ".pdf"
+    execute "! pdfmom " . filename . ".mom > " . filename . ".pdf"
 endfunction
 
