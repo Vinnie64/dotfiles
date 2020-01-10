@@ -78,11 +78,11 @@ filetype plugin indent on    " required
 "
 "
 " Automatically compile groff ms files when saving
-autocmd BufWriteCmd *.ms :call CompileGroffMs()
-function! CompileGroffMs()
+autocmd BufWriteCmd *.mom :call CompileGroffMom()
+function! CompileGroffMom()
     write
     filetype detect
     let filename = expand("%:r") 
-    execute "! groff -e -ms " . filename . ".ms -T pdf > " . filename . ".pdf"
+    execute "! pdfmom -e " . filename . ".mom -Tpdf > " . filename . ".pdf"
 endfunction
 
