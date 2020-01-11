@@ -234,6 +234,7 @@ bindsym $mod+p exec --no-startup-id thunar
 bindsym $mod+c [con_mark="scratchmark"] scratchpad show, resize set width 60 ppt height 60 ppt, move position center
 bindsym $mod+z exec --no-startup-id alacritty --title "Alacritty scratch" --command ~/scripts/move_to_scratchpad
 bindsym $mod+u [class="discord"] scratchpad show, resize set width 1500 px height 850 px, move position center
+bindsym $mod+i [class="Spotify"] scratchpad show, resize set width 1250 px height 685 px, move positino center
 bindsym $mod+Control+Shift+u [class="discord"] move scratchpad
 bindsym $mod+Control+c move position center
 
@@ -249,6 +250,7 @@ exec --no-startup-id feh --bg-fill /etc/lightdm/background
 # Assign windows to workspaces
 
 assign [class="discord"] $ws10
+assign [class="Spotify"] $ws10
 assign [title="Alacritty scratch"] $ws10
 assign [class="Steam"] $ws10
 assign [title="Steam"] $ws10
@@ -257,6 +259,7 @@ assign [title="Steam"] $ws10
 
 exec --no-startup-id steam
 exec --no-startup-id discord
+exec --no-startup-id spotify
 exec --no-startup-id compton
 exec --no-startup-id alacritty --title "Alacritty scratch" --command ~/scripts/move_to_scratchpad
 exec --no-startup-id alacritty --command ~/scripts/autoscroll
@@ -269,6 +272,7 @@ for_window [class="Alacritty"] border none
 for_window [class="Alacritty"] move position center
 for_window [class="firefox"] border none
 for_window [class="discord"] border none, move scratchpad
+for_window [class="Spotify"] border none, move scratchpad
 for_window [class="Thunar"] floating enable
 for_window [class="Thunar"] move position center
 for_window [class="feh"] floating enable
