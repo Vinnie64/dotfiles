@@ -273,6 +273,7 @@ for_window [title="Friends List"] floating enable
 for_window [class="Nvidia-settings"] floating enable
 for_window [class="Lxappearance"] floating enable
 for_window [class="Pavucontrol"] floating enable
+for_window [class="Spotify"] border none
 
 #WINFLOAT
 for_window [class="Spotify"] floating enable
