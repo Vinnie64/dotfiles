@@ -275,3 +275,4 @@ for_window [class="Lxappearance"] floating enable
 for_window [class="Pavucontrol"] floating enable
 
 #WINFLOAT
+for_window [class="Spotify"] floating enable
