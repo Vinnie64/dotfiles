@@ -236,6 +236,7 @@ bindsym $mod+z exec --no-startup-id alacritty --title "Alacritty scratch" --comm
 bindsym $mod+u [class="discord"] scratchpad show, resize set width 1500 px height 850 px, move position center
 bindsym $mod+i [class="Spotify"] scratchpad show, resize set width 1250 px height 685 px, move position center
 bindsym $mod+Control+Shift+u [class="discord"] move scratchpad
+bindsym $mod+Control+Shift+i [class="Spotify"] move scratchpad
 bindsym $mod+Control+c move position center
 
 # Mail
