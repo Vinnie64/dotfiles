@@ -209,7 +209,7 @@ bar {
                 urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
         }
         font pango:DejaVu Sans 16
-        status_command ~/.config/bumblebee-status/bumblebee-status -m nvidiagpu cpu memory disk datetime pasink $(cat ~/.laptop) -p nvidiagpu.format="GPU: {temp}°C" memory.format="{percent:05.02f}%" disk.path=/home disk.format="{left}" datetime.format="%a, %b %d %Y | %H:%M:%S" interval=1 
+        status_command ~/.config/bumblebee-status/bumblebee-status -m xkcd nvidiagpu cpu memory disk datetime pasink $(cat ~/.laptop) -p nvidiagpu.format="GPU: {temp}°C" memory.format="{percent:05.02f}%" disk.path=/home disk.format="{left}" datetime.format="%a, %b %d %Y | %H:%M:%S" interval=1 
 }
 
 # Bind audio keys
