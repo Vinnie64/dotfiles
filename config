@@ -224,7 +224,6 @@ bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 # Bind hotkeys
 
 bindsym $mod+Shift+Return exec firefox
-bindsym $mod+Shift+m exec --no-startup-id i3-sensible-terminal --command neomutt
 bindsym $mod+Shift+o exec --no-startup-id flameshot gui
 bindsym $mod+p exec --no-startup-id thunar
 
