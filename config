@@ -239,11 +239,6 @@ bindsym $mod+Control+Shift+u [class="discord"] move scratchpad
 bindsym $mod+Control+Shift+i [class="Spotify"] move scratchpad
 bindsym $mod+Control+c move position center
 
-# Mail
-
-exec --no-startup-id tmux new-session -d -s mail 'protonmail-bridge --cli'
-exec --no-startup-id tmux new-session -d -s offlineimap 'offlineimap'
-
 # Background
 
 exec --no-startup-id feh --bg-fill /etc/lightdm/background
