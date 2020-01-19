@@ -78,7 +78,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "
 "
-" Automatically compile groff ms files when saving
+" Automatically compile groff mom files when saving
 autocmd BufWriteCmd *.mom :call CompileGroffMom()
 function! CompileGroffMom()
     write
