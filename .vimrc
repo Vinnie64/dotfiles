@@ -97,3 +97,8 @@ function! RunC()
     let filename = expand("%:r")
     execute "! ./" . filename
 endfunction
+
+function! CandRC()
+    call CompileC()
+    call RunC()
+endfunction
