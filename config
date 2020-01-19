@@ -252,6 +252,7 @@ assign [title="Steam"] $ws10
 
 # Autostart
 
+exec --no-startup-id ~/scripts/autostart
 exec --no-startup-id steam
 exec --no-startup-id discord
 exec --no-startup-id spotify
