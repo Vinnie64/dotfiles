@@ -90,7 +90,7 @@ endfunction
 function! CompileC()
     write
     let filename = expand("%:r")
-    execute "! gcc " . filename . " " . filename . ".c"
+    execute "! gcc -o " . filename . " " . filename . ".c"
 endfunction
 
 function! RunC()
