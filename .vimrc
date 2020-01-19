@@ -87,3 +87,13 @@ function! CompileGroffMom()
     execute "! pdfmom " . filename . ".mom > " . filename . ".pdf"
 endfunction
 
+function! CompileC()
+    write
+    let filename = expand("%:r")
+    execute "! gcc " . filename . ".c " . filename
+endfunction
+
+function! RunC()
+    let filename = expand("%:r")
+    execute "! ./" . filename
+endfunction
