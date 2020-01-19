@@ -87,17 +87,20 @@ function! CompileGroffMom()
     execute "! pdfmom " . filename . ".mom > " . filename . ".pdf"
 endfunction
 
+" Compile C code quickly
 function! CompileC()
     write
     let filename = expand("%:r")
     execute "! gcc -o " . filename . " " . filename . ".c"
 endfunction
 
+" Run compiled C code quickly
 function! RunC()
     let filename = expand("%:r")
     execute "! ./" . filename
 endfunction
 
+" Compile and immediately run C code
 function! CandRC()
     call CompileC()
     call RunC()
