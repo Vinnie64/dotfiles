@@ -103,6 +103,7 @@ alias dotfl=". dotfiles_script"
 alias scpt=". scripts_script"
 alias chack=". makechack"
 alias pyhack=". makepyhack"
+alias py="python"
 
 # VI-mode
 bindkey -v
