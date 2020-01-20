@@ -102,6 +102,7 @@ alias venv="python -m venv"
 alias dotfl=". dotfiles_script"
 alias scpt=". scripts_script"
 alias chack=". makechack"
+alias pyhack=". makepyhack"
 
 # VI-mode
 bindkey -v
