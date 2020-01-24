@@ -6,3 +6,5 @@ Visit https://raw.githubusercontent.com/TheRealYougCraft/personal-scripts/master
 Also, it's mainly intended for ME personally. Check through all files and scripts to see what you need and what you don't.
 
 Furthermore, my i3 config is meant for dual-monitor setup but also works with single monitor setups.
+
+Originally created by https://github.com/Fittiboy
