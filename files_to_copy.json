@@ -9,6 +9,5 @@
     "/home/{username}/.config/i3/config",
     "/home/{username}/.config/alacritty/alacritty.yml",
     "/etc/lightdm/lightdm-mini-greeter.conf",
-    "/etc/lightdm/background",
-    "/etc/X11/xorg.conf.d/00-keyboard.conf"
+    "/etc/lightdm/background"
 ]
