@@ -114,11 +114,11 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10:"
-workspace $ws1 output DVI-D-0
-workspace $ws2 output DVI-D-0
-workspace $ws3 output DVI-D-0
-workspace $ws4 output DVI-D-0
-workspace $ws5 output DVI-D-0
+workspace $ws1 output DP-2
+workspace $ws2 output DP-2
+workspace $ws3 output DP-2
+workspace $ws4 output DP-2
+workspace $ws5 output DP-2
 workspace $ws6 output DP-4
 workspace $ws7 output DP-4
 workspace $ws8 output DP-4
@@ -209,10 +209,10 @@ bar {
                 urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
         }
         font pango:DejaVu Sans 16
-        status_command ~/.config/bumblebee-status/bumblebee-status -m xkcd nvidiagpu cpu memory disk datetime pasink $(cat ~/.laptop) -p nvidiagpu.format="GPU: {temp}°C" memory.format="{percent:05.02f}%" disk.path=/home disk.format="{left}" datetime.format="%a, %b %d %Y | %H:%M:%S" interval=1 
+        status_command ~/.config/bumblebee-status/bumblebee-status -m xkcd nvidiagpu cpu cpu2 memory disk datetime pasink $(cat ~/.laptop) -p nvidiagpu.format="GPU: {temp}°C" cpu2.layout="cpu2.temp" cpu2.temp_pattern="temp1_input" memory.format="{percent:05.02f}%" disk.path=/home disk.format="{left}" datetime.format="%a, %b %d %Y | %H:%M:%S" interval=1 
 }
 
-# Bind audio keys
+# Bind audio kes
 
 bindsym XF86AudioMute exec --no-startup-id amixer set Master toggle
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 3%-
