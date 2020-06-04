@@ -209,7 +209,7 @@ bar {
                 urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
         }
         font pango:DejaVu Sans 16
-        status_command ~/.config/bumblebee-status/bumblebee-status -m xkcd nvidiagpu cpu cpu2 memory disk datetime pasink $(cat ~/.laptop) -p nvidiagpu.format="GPU: {temp}°C" cpu2.layout="cpu2.temp" cpu2.temp_pattern="temp1_input" memory.format="{percent:05.02f}%" disk.path=/home disk.format="{left}" datetime.format="%a, %b %d %Y | %H:%M:%S" interval=1 
+        status_command ~/.config/bumblebee-status/bumblebee-status -m xkcd nvidiagpu cpu cpu2 memory disk datetime pasink $(cat ~/.laptop) -p nvidiagpu.format="GPU: {temp}°C" cpu2.layout="cpu2.temp" cpu2.temp_pattern="temp1_input" memory.format="{percent:05.02f}%" disk.path=/home disk.format="{left}" datetime.format="%a, %b %d %Y | %I:%M:%S %p " interval=1 
 }
 
 # Bind audio kes
@@ -224,7 +224,7 @@ bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 # Bind hotkeys
 
 bindsym $mod+Shift+Return exec firefox
-bindsym $mod+Shift+o exec --no-startup-id flameshot gui
+bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 bindsym $mod+p exec --no-startup-id thunar
 
 # General keybinds
