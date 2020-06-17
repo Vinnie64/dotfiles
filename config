@@ -234,6 +234,7 @@ bindsym $mod+c [con_mark="scratchmark"] scratchpad show, resize set width 60 ppt
 bindsym $mod+z exec --no-startup-id alacritty --title "Alacritty scratch" --command ~/scripts/move_to_scratchpad
 bindsym $mod+u [class="discord"] scratchpad show, resize set width 1500 px height 850 px, move position center
 bindsym $mod+i [class="Spotify"] scratchpad show, resize set width 1250 px height 685 px, move position center
+bindsym $mod+y [class="obs"] scratchpad show, resize set width 1500 px height 850 px, move position center
 bindsym $mod+Control+Shift+u [class="discord"] move scratchpad
 bindsym $mod+Control+Shift+i [class="Spotify"] move scratchpad
 bindsym $mod+Control+c move position center
