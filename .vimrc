@@ -59,11 +59,12 @@ Plugin 'kana/vim-textobj-entire'
 Plugin 'kana/vim-textobj-user'
 Plugin 'kana/vim-textobj-line'
 Plugin 'vim-scripts/mom.vim'
-
+Plugin 'nvie/vim-flake8'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
+" 
 "filetype plugin on
 "
 " Brief help
