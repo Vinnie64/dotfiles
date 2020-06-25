@@ -79,6 +79,13 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "
 "
+" Settings for python scripts
+au BufNewFile,BufRead *.py
+    \ set tabstop=4
+    \ | set softtabstop=4
+    \ | set textwidth=79
+autocmd BufWritePost *.py call flake8#Flake8()
+
 " Automatically compile groff mom files when saving
 autocmd BufWriteCmd *.mom :call CompileGroffMom()
 function! CompileGroffMom()
