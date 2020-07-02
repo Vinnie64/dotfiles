@@ -34,7 +34,7 @@ exec --no-startup-id nm-applet
 floating_modifier $mod
 
 # lock the session
-bindsym $mod+Escape exec --no-startup-id dm-tool i3lock
+bindsym $mod+Escape exec --no-startup-id i3lock
 
 # shutdown system
 bindsym $mod+Shift+Escape exec --no-startup-id shutdown now
