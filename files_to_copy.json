@@ -9,5 +9,6 @@
     "/home/{username}/.config/i3/config",
     "/home/{username}/.config/alacritty/alacritty.yml",
     "/etc/lightdm/lightdm-mini-greeter.conf",
-    "/etc/lightdm/background"
+    "/etc/lightdm/background",
+    "/etc/profile.d/vinnie.sh"
 ]
