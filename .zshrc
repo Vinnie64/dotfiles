@@ -109,6 +109,7 @@ bindkey -v
 KEYTIMEOUT=1
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
-
+bindkey '^R' history-substring-search-up
+bindkey '^F' history-substring-search-down
 # Add scripts folder to $PATH
 export PATH=$PATH:$HOME/scripts
